@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-contact.jpg";
@@ -86,27 +86,22 @@ const Contact = () => {
                   <Card>
                     <CardContent className="flex items-start gap-4 pt-6">
                       <div className="p-3 rounded-lg bg-accent/10">
-                        <MapPin className="h-6 w-6 text-accent" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold mb-1">Location</h3>
-                        <p className="text-muted-foreground">
-                          SthirCarbon HQ
-                          <br />
-                          Delhi-NCR, India
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardContent className="flex items-start gap-4 pt-6">
-                      <div className="p-3 rounded-lg bg-accent/10">
                         <Phone className="h-6 w-6 text-accent" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Phone</h3>
-                        <p className="text-muted-foreground">+91-XXXX-XXXXXX</p>
+                        <a
+                          href="tel:+919521766111"
+                          className="text-muted-foreground hover:text-accent transition-colors block"
+                        >
+                          +91 95217 66111
+                        </a>
+                        <a
+                          href="tel:+919827721250"
+                          className="text-muted-foreground hover:text-accent transition-colors block"
+                        >
+                          +91 78277 21250
+                        </a>
                       </div>
                     </CardContent>
                   </Card>

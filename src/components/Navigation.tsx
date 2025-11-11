@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,20 +20,21 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            SthirCarbon
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="SthirCarbon" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.path}
                 to={item.path}
                 className="text-foreground hover:text-accent transition-colors"
+                activeClassName="text-accent font-semibold"
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
 
@@ -50,14 +53,15 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.path}
                 to={item.path}
                 className="block py-2 text-foreground hover:text-accent transition-colors"
+                activeClassName="text-accent font-semibold"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
         )}

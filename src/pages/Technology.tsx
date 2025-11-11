@@ -45,7 +45,7 @@ const Technology = () => {
       <main className="pt-16">
         <Hero
           headline="Pyrolysis: Turning Biomass into Stable Carbon"
-          subheadline="Our proprietary pyrolysis system converts crop residues into biochar, syngas, and bio-oil — capturing carbon and creating renewable energy."
+          subheadline="Our pyrolysis system converts crop residues into biochar, syngas, and bio-oil — capturing carbon and creating renewable energy."
           image={heroImage}
         />
 
