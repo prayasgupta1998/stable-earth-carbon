@@ -28,11 +28,6 @@ const Technology = () => {
       title: "Stable Carbon Output",
       description: "The output is a durable, carbon-rich solid designed for long-term carbon storage. It is stable, low in volatiles, and suitable for soil use, industrial applications, or environmental restoration.",
     },
-    {
-      icon: <Network className="h-12 w-12" />,
-      title: "Scalable Deployment",
-      description: "Our systems are modular and scalable, allowing deployment at village, district, or industrial-cluster scale. By placing reactors where biomass originates, we avoid long-haul transport and drastically reduce carbon leakage.",
-    },
   ];
 
   return (
@@ -50,7 +45,7 @@ const Technology = () => {
       <main className="pt-16">
         <Hero
           headline="Advanced Reactor Technology for Carbon Stability"
-          subheadline="At Stable Earth Carbon, our mission is to transform biomass residues into stable carbon materials through cutting-edge reactor technology. By deploying advanced reactors directly at the source of biomass, we minimize emissions, reduce transport costs, and maximize carbon permanence."
+          subheadline="At Stable Earth Carbon, our mission is to transform biomass residues into stable carbon materials through cutting-edge reactor technology."
           image={heroImage}
         />
 
@@ -63,7 +58,7 @@ const Technology = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
                 <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
@@ -83,6 +78,44 @@ const Technology = () => {
         </section>
 
         <section className="py-20 bg-muted">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Clean, Scalable, Efficient</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Our reactor technology delivers measurable impact across environmental, economic, and social dimensions
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="text-4xl font-bold text-accent mb-2">Clean</h3>
+                  <p className="text-muted-foreground">
+                    Eliminates open burning of agricultural residues, drastically improving air quality and reducing pollution
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="text-4xl font-bold text-accent mb-2">Scalable</h3>
+                  <p className="text-muted-foreground">
+                    Modular design enables deployment at any scale, from village level to industrial clusters
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="text-center hover:shadow-lg transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="text-4xl font-bold text-accent mb-2">Efficient</h3>
+                  <p className="text-muted-foreground">
+                    Decentralized placement reduces transport costs while maximizing carbon retention and energy recovery
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
