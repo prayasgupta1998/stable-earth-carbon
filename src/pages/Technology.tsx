@@ -84,21 +84,21 @@ const Technology = () => {
               
               <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-12">
                 <div className="text-center">
-                  <h3 className="text-6xl md:text-7xl font-bold text-accent mb-2">Zero</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-accent mb-2">Minimal</h3>
                   <p className="text-lg text-muted-foreground">Emissions Operations</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-6xl md:text-7xl font-bold text-accent mb-2">100%</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-accent mb-2">100%</h3>
                   <p className="text-lg text-muted-foreground">Biomass Utilization</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-6xl md:text-7xl font-bold text-accent mb-2">1000+</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-accent mb-2">1000+</h3>
                   <p className="text-lg text-muted-foreground">Years Carbon Storage</p>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-                Our modular reactor units are designed for scalability and near-zero emissions. They can process diverse agricultural residues and produce consistent, high-quality biochar verified for carbon content and stability. Each unit is engineered for reliability and can be deployed across agricultural regions.
+                Our reactor units are designed for scalability and near-zero emissions. They can process diverse agricultural residues and produce consistent, high-quality biochar verified for carbon content and stability. Each unit is engineered for reliability and can be deployed across agricultural regions.
               </p>
             </div>
           </div>
