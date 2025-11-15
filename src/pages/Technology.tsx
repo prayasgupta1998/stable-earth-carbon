@@ -79,90 +79,27 @@ const Technology = () => {
 
         <section className="py-20 bg-muted">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Clean, Scalable, Efficient</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Our reactor technology delivers measurable impact across environmental, economic, and social dimensions
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <h3 className="text-4xl font-bold text-accent mb-2">Clean</h3>
-                  <p className="text-muted-foreground">
-                    Eliminates open burning of agricultural residues, drastically improving air quality and reducing pollution
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <h3 className="text-4xl font-bold text-accent mb-2">Scalable</h3>
-                  <p className="text-muted-foreground">
-                    Modular design enables deployment at any scale, from village level to industrial clusters
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <h3 className="text-4xl font-bold text-accent mb-2">Efficient</h3>
-                  <p className="text-muted-foreground">
-                    Decentralized placement reduces transport costs while maximizing carbon retention and energy recovery
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Why Our Reactors Matter
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Decentralized Carbon Removal</h3>
-                    <p className="text-muted-foreground">
-                      Reactors deployed close to biomass hotspots, eliminating long-haul transport and reducing carbon leakage.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Pollution Reduction</h3>
-                    <p className="text-muted-foreground">
-                      Significant air quality improvements by eliminating open burning of agricultural residues.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Long-Term Carbon Lock</h3>
-                    <p className="text-muted-foreground">
-                      Stable carbon materials designed for centuries of carbon storage through verified permanence.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Rural Economic Upliftment</h3>
-                    <p className="text-muted-foreground">
-                      Creating employment and establishing farmer partnerships that drive local economic development.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="hover:shadow-lg transition-shadow md:col-span-2">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Cost-Effective Scalability</h3>
-                    <p className="text-muted-foreground">
-                      Modular reactor design enables flexible deployment at village, district, or industrial-cluster scale.
-                    </p>
-                  </CardContent>
-                </Card>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12">Clean, Scalable, Efficient</h2>
+              
+              <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-12">
+                <div className="text-center">
+                  <h3 className="text-6xl md:text-7xl font-bold text-accent mb-2">Zero</h3>
+                  <p className="text-lg text-muted-foreground">Emissions Operations</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-6xl md:text-7xl font-bold text-accent mb-2">100%</h3>
+                  <p className="text-lg text-muted-foreground">Biomass Utilization</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-6xl md:text-7xl font-bold text-accent mb-2">1000+</h3>
+                  <p className="text-lg text-muted-foreground">Years Carbon Storage</p>
+                </div>
               </div>
+
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+                Our modular reactor units are designed for scalability and near-zero emissions. They can process diverse agricultural residues and produce consistent, high-quality biochar verified for carbon content and stability. Each unit is engineered for reliability and can be deployed across agricultural regions.
+              </p>
             </div>
           </div>
         </section>
