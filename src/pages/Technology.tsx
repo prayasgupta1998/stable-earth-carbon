@@ -3,40 +3,45 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Card, CardContent } from "@/components/ui/card";
-import { Flame, Leaf, Zap, Factory } from "lucide-react";
+import { Leaf, Factory, Flame, Package, Network } from "lucide-react";
 import heroImage from "@/assets/hero-technology.jpg";
 
 const Technology = () => {
   const processSteps = [
     {
       icon: <Leaf className="h-12 w-12" />,
-      title: "Collection & Drying",
-      description: "Crop residues are collected from farms and properly dried to optimal moisture levels.",
-    },
-    {
-      icon: <Flame className="h-12 w-12" />,
-      title: "Pyrolysis at 500°C",
-      description: "Biomass is heated in an oxygen-free chamber, breaking down into carbon-rich biochar.",
+      title: "Sourcing Biomass",
+      description: "We collect agricultural and agro-industrial residues — crop stubble, husk, woody biomass, and fibrous waste — by working directly with farmers and local supply networks.",
     },
     {
       icon: <Factory className="h-12 w-12" />,
-      title: "Multiple Outputs",
-      description: "Process yields biochar (solid carbon), syngas (energy), and bio-oil (renewable fuel).",
+      title: "On-Site Conversion",
+      description: "Our advanced reactors convert this biomass into high-carbon solids. These reactors are engineered for rural and low-infrastructure environments, enabling decentralized deployment close to where biomass is generated.",
     },
     {
-      icon: <Zap className="h-12 w-12" />,
-      title: "Energy Self-Sufficient",
-      description: "Syngas powers the process, making operations carbon-neutral and low-emission.",
+      icon: <Flame className="h-12 w-12" />,
+      title: "Thermal Optimization",
+      description: "Inside the reactors, thermal conditions (temperature, airflow, residence time) are precisely controlled to maximize carbon retention and minimize emissions. The system recovers usable energy from gases released during conversion, making the process partially self-powered.",
+    },
+    {
+      icon: <Package className="h-12 w-12" />,
+      title: "Stable Carbon Output",
+      description: "The output is a durable, carbon-rich solid designed for long-term carbon storage. It is stable, low in volatiles, and suitable for soil use, industrial applications, or environmental restoration.",
+    },
+    {
+      icon: <Network className="h-12 w-12" />,
+      title: "Scalable Deployment",
+      description: "Our systems are modular and scalable, allowing deployment at village, district, or industrial-cluster scale. By placing reactors where biomass originates, we avoid long-haul transport and drastically reduce carbon leakage.",
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>SthirCarbon Pyrolysis Technology | Biochar from Crop Residue</title>
+        <title>Technology | Stable Earth Carbon Advanced Reactors</title>
         <meta
           name="description"
-          content="Discover SthirCarbon's advanced pyrolysis process that converts stubble into biochar — producing clean energy, reducing emissions, and locking carbon for centuries."
+          content="Learn how Stable Earth Carbon transforms biomass residues into stable carbon materials through cutting-edge reactor technology, enabling decentralized carbon removal."
         />
       </Helmet>
 
@@ -44,8 +49,8 @@ const Technology = () => {
 
       <main className="pt-16">
         <Hero
-          headline="Pyrolysis: Turning Biomass into Stable Carbon"
-          subheadline="Our pyrolysis system converts crop residues into biochar, syngas, and bio-oil — capturing carbon and creating renewable energy."
+          headline="Advanced Reactor Technology for Carbon Stability"
+          subheadline="At Stable Earth Carbon, our mission is to transform biomass residues into stable carbon materials through cutting-edge reactor technology. By deploying advanced reactors directly at the source of biomass, we minimize emissions, reduce transport costs, and maximize carbon permanence."
           image={heroImage}
         />
 
@@ -54,11 +59,11 @@ const Technology = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Our advanced pyrolysis technology transforms agricultural waste into valuable carbon-negative products
+                From biomass sourcing to stable carbon output, our reactor systems enable efficient, scalable carbon removal
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {processSteps.map((step, index) => (
                 <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
@@ -80,29 +85,51 @@ const Technology = () => {
         <section className="py-20 bg-muted">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                Clean, Scalable, Efficient
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+                Why Our Reactors Matter
               </h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent mb-2">Zero</div>
-                  <p className="text-muted-foreground">Emissions Operations</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent mb-2">100%</div>
-                  <p className="text-muted-foreground">Biomass Utilization</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent mb-2">1000+</div>
-                  <p className="text-muted-foreground">Years Carbon Storage</p>
-                </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3">Decentralized Carbon Removal</h3>
+                    <p className="text-muted-foreground">
+                      Reactors deployed close to biomass hotspots, eliminating long-haul transport and reducing carbon leakage.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3">Pollution Reduction</h3>
+                    <p className="text-muted-foreground">
+                      Significant air quality improvements by eliminating open burning of agricultural residues.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3">Long-Term Carbon Lock</h3>
+                    <p className="text-muted-foreground">
+                      Stable carbon materials designed for centuries of carbon storage through verified permanence.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3">Rural Economic Upliftment</h3>
+                    <p className="text-muted-foreground">
+                      Creating employment and establishing farmer partnerships that drive local economic development.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow md:col-span-2">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3">Cost-Effective Scalability</h3>
+                    <p className="text-muted-foreground">
+                      Modular reactor design enables flexible deployment at village, district, or industrial-cluster scale.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
-              <p className="text-lg text-muted-foreground mt-12 leading-relaxed">
-                Our modular pyrolysis units are designed for scalability and near-zero emissions. 
-                They can process diverse agricultural residues and produce consistent, high-quality 
-                biochar verified for carbon content and stability. Each unit is engineered for 
-                reliability and can be deployed across agricultural regions.
-              </p>
             </div>
           </div>
         </section>
@@ -111,7 +138,7 @@ const Technology = () => {
           <div className="container mx-auto px-4 text-center">
             <img
               src={heroImage}
-              alt="Biochar production facility"
+              alt="Advanced reactor technology for stable carbon production"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-2xl"
             />
           </div>
