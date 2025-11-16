@@ -22,8 +22,9 @@ const Navigation = () => {
   ];
 
   const serviceItems = [
-    { name: "Carbon Offset", path: "/services/carbon-offset" },
-    { name: "Emission Reduction Project Development", path: "/services/emission-reduction" },
+    { name: "Development", path: "/services/development" },
+    { name: "Advisory", path: "/services/advisory" },
+    { name: "Commercialization", path: "/services/commercialization" },
   ];
 
   return (
