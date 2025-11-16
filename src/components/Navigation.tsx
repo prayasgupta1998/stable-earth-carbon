@@ -3,7 +3,7 @@ import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/logo-synchar-new.svg";
+import logo from "@/assets/logo-synchar.svg";
 import {
   DropdownMenu,
   DropdownMenuContent,
