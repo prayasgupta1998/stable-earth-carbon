@@ -8,8 +8,9 @@ import Technology from "./pages/Technology";
 import Impact from "./pages/Impact";
 import CarbonCredits from "./pages/CarbonCredits";
 import Contact from "./pages/Contact";
-import CarbonOffset from "./pages/CarbonOffset";
-import EmissionReduction from "./pages/EmissionReduction";
+import Development from "./pages/Development";
+import Advisory from "./pages/Advisory";
+import Commercialization from "./pages/Commercialization";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,8 +26,9 @@ const App = () => (
           <Route path="/technology" element={<Technology />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/carbon-credits" element={<CarbonCredits />} />
-          <Route path="/services/carbon-offset" element={<CarbonOffset />} />
-          <Route path="/services/emission-reduction" element={<EmissionReduction />} />
+          <Route path="/services/development" element={<Development />} />
+          <Route path="/services/advisory" element={<Advisory />} />
+          <Route path="/services/commercialization" element={<Commercialization />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

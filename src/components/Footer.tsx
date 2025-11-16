@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">SthirCarbon</h3>
+            <h3 className="text-xl font-bold mb-4">Synchar</h3>
             <p className="text-primary-foreground/80">
               Turning Farm Waste into Stable Carbon for a Cleaner Future
             </p>
@@ -32,11 +32,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               <a
-                href="mailto:info@sthircarbon.com"
+                href="mailto:info@synchar.com"
                 className="flex items-center gap-2 hover:text-accent transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                info@sthircarbon.com
+                info@synchar.com
               </a>
               <p className="text-primary-foreground/80">Delhi-NCR, India</p>
             </div>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-primary-foreground/80">
-          <p>© 2025 SthirCarbon. All rights reserved.</p>
+          <p>© 2025 Synchar. All rights reserved.</p>
         </div>
       </div>
     </footer>

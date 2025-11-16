@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, FileCheck } from "lucide-react";
+import { ArrowRight, HardHat, BookOpenCheck, Handshake } from "lucide-react";
 import heroImage from "@/assets/hero-home.jpg";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>SthirCarbon | Biochar Carbon Removal from Crop Waste | Delhi-NCR</title>
+        <title>Synchar | Biochar Carbon Removal from Crop Waste | Delhi-NCR</title>
         <meta
           name="description"
-          content="SthirCarbon transforms crop residue from stubble burning into biochar — locking carbon for centuries while improving soil health and reducing air pollution in Delhi-NCR."
+          content="Synchar transforms crop residue from stubble burning into biochar — locking carbon for centuries while improving soil health and reducing air pollution in Delhi-NCR."
         />
       </Helmet>
 
@@ -38,8 +38,8 @@ const Home = () => {
                   The Problem: Stubble Burning and Air Pollution
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Each winter, millions of tonnes of crop residue are burned across North India, 
-                  contributing up to 40% of Delhi's seasonal air pollution. SthirCarbon tackles 
+                  Each winter, millions of tonnes of crop residue are burned across North India,
+                  contributing up to 40% of Delhi's seasonal air pollution. Synchar tackles
                   this crisis by transforming waste biomass into biochar, cutting emissions at the source.
                 </p>
               </div>
@@ -71,7 +71,7 @@ const Home = () => {
                   Our Solution: Converting Waste into Stable Carbon
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  SthirCarbon uses advanced biomass reactors to convert agricultural and agro-industrial 
+                  Synchar uses advanced biomass reactors to convert agricultural and agro-industrial
                   residues into stable carbon materials. By deploying advanced reactor units, we eliminate 
                   open burning, and create durable carbon that remains stored for the long term.
                 </p>
@@ -93,29 +93,29 @@ const Home = () => {
                 Our Services
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                We offer comprehensive solutions to help organizations achieve their net zero goals 
-                through carbon removal and emission reduction strategies.
+                Inspired by the Residual Carbon playbook, Synchar supports partners across the
+                full carbon removal lifecycle: building new projects, shaping strategy, and
+                commercializing tonnes.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="mb-4 text-accent">
-                    <Target className="h-12 w-12" />
+                    <HardHat className="h-12 w-12" />
                   </div>
-                  <CardTitle className="text-2xl">Carbon Offset</CardTitle>
+                  <CardTitle className="text-2xl">Development</CardTitle>
                   <CardDescription>
-                    Compensate for your unavoidable emissions
+                    Turn-key biochar infrastructure programs
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-6">
-                    Invest in verified carbon removal projects to offset your organization's 
-                    carbon footprint. We provide transparent, measurable, and permanent carbon 
-                    sequestration solutions aligned with international standards.
+                    We scope sites, engineer modular reactors, and manage commissioning so you
+                    can deploy high-integrity carbon removal assets with confidence.
                   </p>
-                  <Link to="/services/carbon-offset">
+                  <Link to="/services/development">
                     <Button variant="outline" className="w-full">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -127,20 +127,43 @@ const Home = () => {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="mb-4 text-accent">
-                    <FileCheck className="h-12 w-12" />
+                    <BookOpenCheck className="h-12 w-12" />
                   </div>
-                  <CardTitle className="text-2xl">Emission Reduction Project Development</CardTitle>
+                  <CardTitle className="text-2xl">Advisory</CardTitle>
                   <CardDescription>
-                    Develop your own emission reduction projects
+                    Strategy, MRV, and market intelligence
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-6">
-                    We guide you through developing internationally accredited Voluntary Emission 
-                    Reduction projects. Generate tradeable carbon credits while reducing your 
-                    Scope 3 emissions through carbon insetting.
+                    Engage our advisors to pressure-test roadmaps, align stakeholders, and
+                    navigate evolving standards before investing in new carbon programs.
                   </p>
-                  <Link to="/services/emission-reduction">
+                  <Link to="/services/advisory">
+                    <Button variant="outline" className="w-full">
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <div className="mb-4 text-accent">
+                    <Handshake className="h-12 w-12" />
+                  </div>
+                  <CardTitle className="text-2xl">Commercialization</CardTitle>
+                  <CardDescription>
+                    Credit packaging and offtake execution
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-6">
+                    Synchar qualifies tonnes, packages registry-ready lots, and connects you
+                    to premium buyers through structured offtake or spot sales.
+                  </p>
+                  <Link to="/services/commercialization">
                     <Button variant="outline" className="w-full">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -158,7 +181,7 @@ const Home = () => {
               Join Our Mission for a Stable, Sustainable Future
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Partner with SthirCarbon to clean our air, support farmers, and accelerate 
+              Partner with Synchar to clean our air, support farmers, and accelerate
               high-integrity carbon removal.
             </p>
             <Link to="/contact">
