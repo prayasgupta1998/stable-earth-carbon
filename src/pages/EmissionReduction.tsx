@@ -40,7 +40,7 @@ const EmissionReduction = () => {
   return (
     <>
       <Helmet>
-        <title>Emission Reduction Project Development | SthirCarbon</title>
+        <title>Emission Reduction Project Development | Synchar</title>
         <meta
           name="description"
           content="Develop verified voluntary emission reduction projects and generate carbon credits. Expert guidance through international standards and carbon markets."
@@ -62,7 +62,7 @@ const EmissionReduction = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                SthirCarbon offers businesses the opportunity to develop internationally accredited 
+                Synchar offers businesses the opportunity to develop internationally accredited
                 Voluntary Emission Reduction (VER) projects and generate carbon credits to be traded 
                 in the voluntary carbon market.
               </p>
@@ -128,7 +128,7 @@ const EmissionReduction = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Why Develop Projects with SthirCarbon?
+              Why Develop Projects with Synchar?
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -157,8 +157,8 @@ const EmissionReduction = () => {
               Ready to Develop Your Emission Reduction Project?
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Get involved in global carbon markets and prepare for the net zero transition 
-              with SthirCarbon's expert guidance.
+              Get involved in global carbon markets and prepare for the net zero transition
+              with Synchar's expert guidance.
             </p>
             <Link to="/contact">
               <Button size="lg" variant="secondary">

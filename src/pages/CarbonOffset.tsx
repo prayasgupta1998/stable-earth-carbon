@@ -35,10 +35,10 @@ const CarbonOffset = () => {
   return (
     <>
       <Helmet>
-        <title>Carbon Offset Solutions | SthirCarbon</title>
+        <title>Carbon Offset Solutions | Synchar</title>
         <meta
           name="description"
-          content="Offset your unavoidable emissions through verified carbon removal projects. Partner with SthirCarbon to achieve your net zero goals."
+          content="Offset your unavoidable emissions through verified carbon removal projects. Partner with Synchar to achieve your net zero goals."
         />
       </Helmet>
 
@@ -68,8 +68,8 @@ const CarbonOffset = () => {
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Offset your unavoidable emissions by funding verified emission reduction projects with 
-                SthirCarbon and mitigate your environmental impact. Demonstrate your commitment to 
+                Offset your unavoidable emissions by funding verified emission reduction projects with
+                Synchar and mitigate your environmental impact. Demonstrate your commitment to
                 corporate sustainability by taking steps to achieve global goals in the fight against 
                 the climate crisis.
               </p>
@@ -120,7 +120,7 @@ const CarbonOffset = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Why Choose SthirCarbon for Carbon Offsetting?
+              Why Choose Synchar for Carbon Offsetting?
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -149,7 +149,7 @@ const CarbonOffset = () => {
               Ready to Offset Your Carbon Footprint?
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Partner with SthirCarbon to balance your emissions and demonstrate your commitment 
+              Partner with Synchar to balance your emissions and demonstrate your commitment
               to a sustainable future.
             </p>
             <Link to="/contact">

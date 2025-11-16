@@ -39,10 +39,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact SthirCarbon | Partner for Clean Air & Carbon Removal</title>
+        <title>Contact Synchar | Partner for Clean Air & Carbon Removal</title>
         <meta
           name="description"
-          content="Get in touch with SthirCarbon to collaborate on biochar-based carbon removal, sustainability investment, or farm partnerships."
+          content="Get in touch with Synchar to collaborate on biochar-based carbon removal, sustainability investment, or farm partnerships."
         />
       </Helmet>
 
@@ -74,10 +74,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <a
-                          href="mailto:info@sthircarbon.com"
+                          href="mailto:info@synchar.com"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          info@sthircarbon.com
+                          info@synchar.com
                         </a>
                       </div>
                     </CardContent>
