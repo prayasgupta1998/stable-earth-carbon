@@ -14,6 +14,7 @@ import heroImage from "@/assets/hero-contact.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,13 +22,48 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", organization: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const submission = new FormData();
+      submission.append("name", formData.name);
+      submission.append("email", formData.email);
+      submission.append("organization", formData.organization);
+      submission.append("message", formData.message);
+      submission.append("_subject", "New Synchar website inquiry");
+      submission.append("_captcha", "false");
+
+      const response = await fetch(
+        "https://formsubmit.co/prayas.tension@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: submission,
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      toast({
+        title: "Message sent!",
+        description: "Thank you for reaching out. We'll get back to you soon.",
+      });
+      setFormData({ name: "", email: "", organization: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Submission failed",
+        description: "Please try again or email prayas.tension@gmail.com directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -39,10 +75,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact SthirCarbon | Partner for Clean Air & Carbon Removal</title>
+        <title>Contact Synchar | Partner for Clean Air & Carbon Removal</title>
         <meta
           name="description"
-          content="Get in touch with SthirCarbon to collaborate on biochar-based carbon removal, sustainability investment, or farm partnerships."
+          content="Get in touch with Synchar to collaborate on biochar-based carbon removal, sustainability investment, or farm partnerships."
         />
       </Helmet>
 
@@ -74,10 +110,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <a
-                          href="mailto:info@sthircarbon.com"
+                          href="mailto:info@synchar.com"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          info@sthircarbon.com
+                          info@synchar.com
                         </a>
                       </div>
                     </CardContent>
@@ -160,8 +196,13 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full">
-                      Send Message
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </CardContent>
