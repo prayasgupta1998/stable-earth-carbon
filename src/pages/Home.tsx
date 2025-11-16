@@ -93,9 +93,8 @@ const Home = () => {
                 Our Services
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Inspired by the Residual Carbon playbook, Synchar supports partners across the
-                full carbon removal lifecycle: building new projects, shaping strategy, and
-                commercializing tonnes.
+                Synchar supports partners across the full carbon removal lifecycle: 
+                building new projects, shaping strategy, and commercializing tonnes.
               </p>
             </div>
 
@@ -112,8 +111,7 @@ const Home = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-6">
-                    We scope sites, engineer modular reactors, and manage commissioning so you
-                    can deploy high-integrity carbon removal assets with confidence.
+                    We scope sites, and manage commissioning so you can deploy high-integrity carbon removal assets with confidence.
                   </p>
                   <Link to="/services/development">
                     <Button variant="outline" className="w-full">
