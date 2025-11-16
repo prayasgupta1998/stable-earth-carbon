@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +19,11 @@ const Navigation = () => {
     { name: "Technology", path: "/technology" },
     { name: "Impact", path: "/impact" },
     { name: "Carbon Credits", path: "/carbon-credits" },
-    { name: "Contact", path: "/contact" },
+  ];
+
+  const serviceItems = [
+    { name: "Carbon Offset", path: "/services/carbon-offset" },
+    { name: "Emission Reduction Project Development", path: "/services/emission-reduction" },
   ];
 
   return (
@@ -36,6 +46,30 @@ const Navigation = () => {
                 {item.name}
               </NavLink>
             ))}
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-accent transition-colors focus:outline-none">
+                Services
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-background border-border z-50">
+                {serviceItems.map((item) => (
+                  <DropdownMenuItem key={item.path} asChild>
+                    <Link to={item.path} className="cursor-pointer">
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <NavLink
+              to="/contact"
+              className="text-foreground hover:text-accent transition-colors"
+              activeClassName="text-accent font-semibold"
+            >
+              Contact
+            </NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,6 +97,27 @@ const Navigation = () => {
                 {item.name}
               </NavLink>
             ))}
+            <div className="py-2">
+              <div className="font-semibold text-foreground mb-2">Services</div>
+              {serviceItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className="block py-2 pl-4 text-foreground hover:text-accent transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+            <NavLink
+              to="/contact"
+              className="block py-2 text-foreground hover:text-accent transition-colors"
+              activeClassName="text-accent font-semibold"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </NavLink>
           </div>
         )}
       </div>
