@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>SthirCarbon | Biochar Carbon Removal from Crop Waste | Delhi-NCR</title>
+        <title>Synchar | Biochar Carbon Removal from Crop Waste | Delhi-NCR</title>
         <meta
           name="description"
-          content="SthirCarbon transforms crop residue from stubble burning into biochar — locking carbon for centuries while improving soil health and reducing air pollution in Delhi-NCR."
+          content="Synchar transforms crop residue from stubble burning into biochar — locking carbon for centuries while improving soil health and reducing air pollution in Delhi-NCR."
         />
       </Helmet>
 
@@ -38,8 +38,8 @@ const Home = () => {
                   The Problem: Stubble Burning and Air Pollution
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Each winter, millions of tonnes of crop residue are burned across North India, 
-                  contributing up to 40% of Delhi's seasonal air pollution. SthirCarbon tackles 
+                  Each winter, millions of tonnes of crop residue are burned across North India,
+                  contributing up to 40% of Delhi's seasonal air pollution. Synchar tackles
                   this crisis by transforming waste biomass into biochar, cutting emissions at the source.
                 </p>
               </div>
@@ -71,7 +71,7 @@ const Home = () => {
                   Our Solution: Converting Waste into Stable Carbon
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  SthirCarbon uses advanced biomass reactors to convert agricultural and agro-industrial 
+                  Synchar uses advanced biomass reactors to convert agricultural and agro-industrial
                   residues into stable carbon materials. By deploying advanced reactor units, we eliminate 
                   open burning, and create durable carbon that remains stored for the long term.
                 </p>
@@ -158,7 +158,7 @@ const Home = () => {
               Join Our Mission for a Stable, Sustainable Future
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Partner with SthirCarbon to clean our air, support farmers, and accelerate 
+              Partner with Synchar to clean our air, support farmers, and accelerate
               high-integrity carbon removal.
             </p>
             <Link to="/contact">
