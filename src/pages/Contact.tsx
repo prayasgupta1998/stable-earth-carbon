@@ -14,7 +14,6 @@ import heroImage from "@/assets/hero-contact.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,47 +21,13 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/prayas.tension@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            organization: formData.organization,
-            message: formData.message,
-            _subject: "New Synchar website inquiry",
-          }),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
-
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. We'll get back to you soon.",
-      });
-      setFormData({ name: "", email: "", organization: "", message: "" });
-    } catch (error) {
-      toast({
-        title: "Submission failed",
-        description: "Please try again or email prayas.tension@gmail.com directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    toast({
+      title: "Message Sent!",
+      description: "Thank you for reaching out. We'll get back to you soon.",
+    });
+    setFormData({ name: "", email: "", organization: "", message: "" });
   };
 
   const handleChange = (
@@ -195,13 +160,8 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button
-                      type="submit"
-                      size="lg"
-                      className="w-full"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Sending..." : "Send Message"}
+                    <Button type="submit" size="lg" className="w-full">
+                      Send Message
                     </Button>
                   </form>
                 </CardContent>
