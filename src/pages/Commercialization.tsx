@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, DollarSign, Globe2, Sparkles, Handshake } from "lucide-react";
-import heroImage from "@/assets/hero-commercialization.jpg";
+import heroImage from "@/assets/hero-credits.jpg";
 import ImpactCard from "@/components/ImpactCard";
 
 const Commercialization = () => {

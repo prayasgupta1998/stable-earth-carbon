@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Ruler, HardHat, BadgeCheck, Factory } from "lucide-react";
-import heroImage from "@/assets/hero-development.jpg";
+import heroImage from "@/assets/hero-technology.jpg";
 import ImpactCard from "@/components/ImpactCard";
 
 const Development = () => {

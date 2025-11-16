@@ -14,7 +14,7 @@ import {
   Award,
   TrendingUp,
 } from "lucide-react";
-import heroImage from "@/assets/hero-advisory.jpg";
+import heroImage from "@/assets/hero-impact.jpg";
 import ImpactCard from "@/components/ImpactCard";
 
 const Advisory = () => {
