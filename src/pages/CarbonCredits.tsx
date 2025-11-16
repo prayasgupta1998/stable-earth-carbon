@@ -35,10 +35,10 @@ const CarbonCredits = () => {
   return (
     <>
       <Helmet>
-        <title>SthirCarbon Carbon Credits | Verified Carbon Removal</title>
+        <title>Synchar Carbon Credits | Verified Carbon Removal</title>
         <meta
           name="description"
-          content="SthirCarbon generates verified carbon credits through biochar — providing transparent, high-integrity carbon removal for sustainability investors and net-zero buyers."
+          content="Synchar generates verified carbon credits through biochar — providing transparent, high-integrity carbon removal for sustainability investors and net-zero buyers."
         />
       </Helmet>
 
@@ -134,7 +134,7 @@ const CarbonCredits = () => {
               Ready to Invest in Verified Carbon Removal?
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Partner with SthirCarbon for high-quality, traceable carbon credits 
+              Partner with Synchar for high-quality, traceable carbon credits
               that make a real difference.
             </p>
             <Link to="/contact">

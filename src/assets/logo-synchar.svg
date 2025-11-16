@@ -1,0 +1,16 @@
+<svg width="168" height="48" viewBox="0 0 168 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Synchar logo">
+  <defs>
+    <linearGradient id="syncharGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect rx="12" width="168" height="48" fill="url(#syncharGradient)" opacity="0.15" />
+  <g fill="none" stroke="url(#syncharGradient)" stroke-width="2.5" stroke-linecap="round">
+    <path d="M20 30c2.5 3.5 6 5.5 9.5 5.5 6.5 0 11-4.5 11-10.5s-4.5-10.5-11-10.5c-3.5 0-7 2-9.5 5.5" />
+    <path d="M40 15c2 4.5 2 13.5 0 18" />
+  </g>
+  <text x="56" y="30" font-family="'Poppins', 'Inter', system-ui" font-size="20" font-weight="600" fill="#0f172a">
+    Synchar
+  </text>
+</svg>

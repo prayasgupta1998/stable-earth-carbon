@@ -71,3 +71,36 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Resolving "too complex" merge conflicts from GitHub
+
+When GitHub reports that conflicts are "too complex" for the web editor, you will need to resolve them locally. The high-level flow is:
+
+1. **Update your local main branch**
+   ```bash
+   git checkout main
+   git fetch origin
+   git pull origin main
+   ```
+2. **Create or update your feature branch off the refreshed main**
+   ```bash
+   git checkout -b fix-conflicts  # or `git checkout your-branch && git rebase main`
+   ```
+3. **Bring in the other branch and resolve conflicts**
+   ```bash
+   git merge origin/<branch-with-changes>
+   # or `git rebase origin/main` if you prefer rebasing
+   ```
+   - Open each file containing conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+   - Decide which sections to keep or how to combine them.
+   - Remove the conflict markers after editing.
+4. **Test and finalize**
+   ```bash
+   npm install
+   npm run build
+   git add <files>
+   git commit -m "Resolve merge conflicts"
+   git push origin fix-conflicts
+   ```
+
+Finally, open a pull request (or update the existing one) with your resolved branch. Because the conflicts are now handled locally, GitHub will allow the merge.
