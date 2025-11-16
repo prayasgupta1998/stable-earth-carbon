@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, TrendingUp, Shield, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-credits.jpg";
+import heroImage from "@/assets/hero-credits-new.jpg";
 
 const CarbonCredits = () => {
   const features = [
