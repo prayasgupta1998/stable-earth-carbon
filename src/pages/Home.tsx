@@ -59,8 +59,9 @@ const Home = () => {
               <div className="order-2 md:order-1 relative h-80 rounded-lg overflow-hidden shadow-xl">
                 <div className="w-full h-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                   <div className="text-center text-primary-foreground p-8">
-                    <div className="text-6xl font-bold mb-4">500°C</div>
-                    <p className="text-xl">Pyrolysis Temperature</p>
+                    <div className="text-5xl font-bold mb-4">Advanced</div>
+                    <div className="text-4xl font-bold mb-2">Biomass</div>
+                    <div className="text-5xl font-bold">Reactors</div>
                   </div>
                 </div>
               </div>
@@ -69,9 +70,9 @@ const Home = () => {
                   Our Solution: Converting Waste into Stable Carbon
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Through controlled pyrolysis, we turn crop residues into biochar — a carbon-rich 
-                  material that remains stable for centuries. This not only prevents pollution but 
-                  sequesters CO₂, creating measurable, permanent carbon removal.
+                  SthirCarbon uses advanced biomass reactors to convert agricultural and agro-industrial 
+                  residues into stable carbon materials. By deploying advanced reactor units, we eliminate 
+                  open burning, and create durable carbon that remains stored for the long term.
                 </p>
                 <Link to="/technology">
                   <Button variant="outline" size="lg">
