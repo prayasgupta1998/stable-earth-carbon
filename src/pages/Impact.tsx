@@ -33,10 +33,10 @@ const Impact = () => {
   return (
     <>
       <Helmet>
-        <title>SthirCarbon Impact | Clean Air, Healthy Soils, Climate Action</title>
+        <title>Synchar Impact | Clean Air, Healthy Soils, Climate Action</title>
         <meta
           name="description"
-          content="SthirCarbon reduces Delhi's air pollution, enhances soil fertility, and sequesters carbon permanently through biochar — driving environmental and social impact."
+          content="Synchar reduces Delhi's air pollution, enhances soil fertility, and sequesters carbon permanently through biochar — driving environmental and social impact."
         />
       </Helmet>
 
