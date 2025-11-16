@@ -33,10 +33,10 @@ const Technology = () => {
   return (
     <>
       <Helmet>
-        <title>Technology | Stable Earth Carbon Advanced Reactors</title>
+        <title>Technology | Synchar Advanced Reactors</title>
         <meta
           name="description"
-          content="Learn how Stable Earth Carbon transforms biomass residues into stable carbon materials through cutting-edge reactor technology, enabling decentralized carbon removal."
+          content="Learn how Synchar transforms biomass residues into stable carbon materials through cutting-edge reactor technology, enabling decentralized carbon removal."
         />
       </Helmet>
 
@@ -45,7 +45,7 @@ const Technology = () => {
       <main className="pt-16">
         <Hero
           headline="Advanced Reactor Technology for Carbon Stability"
-          subheadline="At Stable Earth Carbon, our mission is to transform biomass residues into stable carbon materials through cutting-edge reactor technology."
+          subheadline="At Synchar, our mission is to transform biomass residues into stable carbon materials through cutting-edge reactor technology."
           image={heroImage}
         />
 

@@ -3,7 +3,7 @@ import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-synchar.svg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,8 +22,9 @@ const Navigation = () => {
   ];
 
   const serviceItems = [
-    { name: "Carbon Offset", path: "/services/carbon-offset" },
-    { name: "Emission Reduction Project Development", path: "/services/emission-reduction" },
+    { name: "Development", path: "/services/development" },
+    { name: "Advisory", path: "/services/advisory" },
+    { name: "Commercialization", path: "/services/commercialization" },
   ];
 
   return (
@@ -31,7 +32,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="SthirCarbon" className="h-[2.66rem] w-auto" />
+            <img src={logo} alt="Synchar" className="h-[2.66rem] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
