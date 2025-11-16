@@ -71,8 +71,8 @@ const Advisory = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Synchar's advisors help developers, corporates, and financiers make confident decisions as they enter
-                the carbon removal economy. Drawing inspiration from Residual Carbon's insight-driven services, we
-                combine market intelligence with on-the-ground project data to shape the right moves for your portfolio.
+                the carbon removal economy. We combine market intelligence with on-the-ground project data to shape
+                the right moves for your portfolio.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">

@@ -61,9 +61,9 @@ const Development = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Inspired by the build-first ethos of Residual Carbon, we turn surplus field residues into durable
-                carbon removal assets. Synchar brings together agronomy, engineering, and finance teams so that
-                every project is grounded in real biomass supply chains and ready for institutional buyers.
+                Synchar turns surplus field residues into durable carbon removal assets by bringing together
+                agronomy, engineering, and finance teams. Every project is grounded in real biomass supply chains
+                and ready for institutional buyers.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">

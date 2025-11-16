@@ -61,8 +61,8 @@ const Commercialization = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Residual Carbon proves that high-quality projects deserve equally strong go-to-market engines. Synchar extends
-                that approach with a commercialization desk dedicated to biochar and other durable carbon removals.
+                High-quality projects deserve equally strong go-to-market engines, so Synchar operates a
+                commercialization desk dedicated to biochar and other durable carbon removals.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
