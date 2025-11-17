@@ -32,11 +32,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               <a
-                href="mailto:info@synchar.com"
+                href="mailto:removeco2@synchar.earth"
                 className="flex items-center gap-2 hover:text-accent transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                info@synchar.com
+                removeco2@synchar.earth
               </a>
               <p className="text-primary-foreground/80">Delhi-NCR, India</p>
             </div>
