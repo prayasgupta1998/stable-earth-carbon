@@ -32,7 +32,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Synchar" className="h-[7.98rem] w-auto" />
+            <img src={logo} alt="Synchar" className="h-[8.78rem] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
