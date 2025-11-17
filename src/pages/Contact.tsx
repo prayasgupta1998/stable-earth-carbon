@@ -285,10 +285,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold mb-1">Email</h3>
                         <a
-                          href="mailto:info@synchar.com"
+                          href="mailto:removeco2@synchar.earth"
                           className="text-muted-foreground hover:text-accent transition-colors"
                         >
-                          info@synchar.com
+                          removeco2@synchar.earth
                         </a>
                       </div>
                     </CardContent>
